@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8d8ee;
+  color: #32146b;
+}
+
+/* CABEÇALHO */
+
+.header {
+  background: linear-gradient(90deg, #8e24aa, #c238d9);
+  padding: 25px 35px;
+}
+
+.topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+h1 {
+  color: white;
+  font-size: 32px;
+}
+
+/* PESQUISA */
+
+form {
+  display: flex;
+}
+
+input {
+  width: 300px;
+  height: 45px;
+  border: none;
+  padding: 0 15px;
+  font-size: 16px;
+  border-radius: 6px 0 0 6px;
+  outline: none;
+}
+
+button {
+  height: 45px;
+  padding: 0 20px;
+  border: none;
+  background: #e9a3df;
+  color: #32146b;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+}
+
+/* CONTEÚDO */
+
+.conteudo {
+  padding: 35px;
+}
+
+.categoria {
+  margin-bottom: 45px;
+}
+
+.categoria h2 {
+  font-size: 27px;
+  margin-bottom: 20px;
+}
+
+/* FILMES */
+
+.filmes {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.filme {
+  width: 125px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.poster {
+  width: 125px;
+  height: 165px;
+  margin-bottom: 9px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px;
+
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+
+  border-radius: 6px;
+
+  box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+
+  transition: 0.2s;
+}
+
+.poster:hover {
+  transform: scale(1.05);
+}
+
+/* COMÉDIA */
+
+.poster1 {
+  background: linear-gradient(145deg, #ec407a, #ffb74d);
+}
+
+.poster2 {
+  background: linear-gradient(145deg, #222, #7250a8);
+}
+
+.poster3 {
+  background: linear-gradient(145deg, #111, #555);
+}
+
+.poster4 {
+  background: linear-gradient(145deg, #f39c42, #e74c3c);
+}
+
+.poster5 {
+  background: linear-gradient(145deg, #2fa7df, #f0b84c);
+}
+
+.poster6 {
+  background: linear-gradient(145deg, #386dcc, #8e4dcc);
+}
+
+.poster7 {
+  background: linear-gradient(145deg, #111, #20a56d);
+}
+
+.poster8 {
+  background: linear-gradient(145deg, #a52d4d, #d66b91);
+}
+
+.poster9 {
+  background: linear-gradient(145deg, #3478bd, #e7b548);
+}
+
+.poster10 {
+  background: linear-gradient(145deg, #777, #222);
+}
+
+/* AÇÃO */
+
+.poster11 {
+  background: linear-gradient(145deg, #071f5c, #2085d5);
+}
+
+.poster12 {
+  background: linear-gradient(145deg, #222, #b84b37);
+}
+
+.poster13 {
+  background: linear-gradient(145deg, #111, #777);
+}
+
+.poster14 {
+  background: linear-gradient(145deg, #b58b45, #493421);
+}
+
+.poster15 {
+  background: linear-gradient(145deg, #d39b36, #4e5c75);
+}
+
+.poster16 {
+  background: linear-gradient(145deg, #111, #333);
+}
+
+.poster17 {
+  background: linear-gradient(145deg, #663e28, #c6a36a);
+}
+
+.poster18 {
+  background: linear-gradient(145deg, #111, #b32020);
+}
+
+.poster19 {
+  background: linear-gradient(145deg, #d99b2b, #333);
+}
+
+.poster20 {
+  background: linear-gradient(145deg, #8c5a35, #171717);
+}
+
+/* FICÇÃO */
+
+.poster21 {
+  background: linear-gradient(145deg, #071a3d, #6688b8);
+}
+
+.poster22 {
+  background: linear-gradient(145deg, #092a19, #18a56b);
+}
+
+.poster23 {
+  background: linear-gradient(145deg, #09528c, #55c6ee);
+}
+
+.poster24 {
+  background: linear-gradient(145deg, #8c6945, #c4a66b);
+}
+
+.poster25 {
+  background: linear-gradient(145deg, #101b2b, #e94a34);
+}
+
+.poster26 {
+  background: linear-gradient(145deg, #050505, #555);
+}
+
+.poster27 {
+  background: linear-gradient(145deg, #e87525, #273e8e);
+}
+
+.poster28 {
+  background: linear-gradient(145deg, #281d75, #d95cc8);
+}
+
+.poster29 {
+  background: linear-gradient(145deg, #333, #999);
+}
+
+.poster30 {
+  background: linear-gradient(145deg, #111, #666);
+}
+
+/* RODAPÉ */
+
+footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* CELULAR */
+
+@media (max-width: 800px) {
+
+  .topo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .conteudo {
+    padding: 25px 15px;
+  }
+
+  .filmes {
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 27px;
+  }
+}
