@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filmes Online Grátis</title>
+  <meta name="description" content="Explore filmes por categoria e encontre onde assistir legalmente.">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header class="topo">
+    <a class="logo" href="#">🎬 Filmes <span>Online</span></a>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#lancamentos">Lançamentos</a>
+      <a href="#acao">Ação</a>
+      <a href="#comedia">Comédia</a>
+      <a href="#terror">Terror</a>
+      <a href="#ficcao">Ficção científica</a>
+    </nav>
+    <input id="pesquisa" type="search" placeholder="Pesquisar filmes...">
+  </header>
+
+  <main id="inicio">
+    <section class="destaque">
+      <div>
+        <span class="etiqueta">DESTAQUE</span>
+        <h1>Seu próximo filme favorito está aqui</h1>
+        <p>Explore aventuras, comédias, suspense e ficção científica.</p>
+        <a class="botao" href="#lancamentos">Explorar catálogo</a>
+      </div>
+    </section>
+
+    <p id="resultado" aria-live="polite"></p>
+
+    <section class="categoria" id="lancamentos">
+      <h2>Lançamentos e destaques</h2>
+      <div class="filmes">
+        <article class="filme" data-titulo="aventura espacial" data-categoria="ficcao">
+          <div class="capa capa1">AVENTURA<br>ESPACIAL</div>
+          <h3>Aventura Espacial</h3><p>Ficção científica</p>
+          <a href="https://www.justwatch.com/br" target="_blank" rel="noopener">Onde assistir</a>
+        </article>
+        <article class="filme" data-titulo="missao secreta" data-categoria="acao">
+          <div class="capa capa2">MISSÃO<br>SECRETA</div>
+          <h3>Missão Secreta</h3><p>Ação</p>
+          <a href="https://www.justwatch.com/br" target="_blank" rel="noopener">Onde assistir</a>
+        </article>
+        <article class="filme" data-titulo="ferias atrapalhadas" data-categoria="comedia">
+          <div class="capa capa3">FÉRIAS<br>ATRAPALHADAS</div>
+          <h3>Férias Atrapalhadas</h3><p>Comédia</p>
+          <a href="https://www.justwatch.com/br" target="_blank" rel="noopener">Onde assistir</a>
+        </article>
+        <article class="filme" data-titulo="a casa misteriosa" data-categoria="terror">
+          <div class="capa capa4">A CASA<br>MISTERIOSA</div>
+          <h3>A Casa Misteriosa</h3><p>Terror</p>
+          <a href="https://www.justwatch.com/br" target="_blank" rel="noopener">Onde assistir</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="categoria" id="acao">
+      <h2>Ação</h2>
+      <div class="filmes">
+        <article class="filme" data-titulo="operacao noturna" data-categoria="acao">
+          <div class="capa capa2">OPERAÇÃO<br>NOTURNA</div>
+          <h3>Operação Noturna</h3><p>Ação e aventura</p>
+          <a href="https://www.justwatch.com/br" target="_blank" rel="noopener">Onde assistir</a>
+        </article>
+        <article class="filme" data-titulo="o ultimo guardiao" data-categoria="acao">
+          <div class="capa capa5">O ÚLTIMO<br>GUARDIÃO</div>
+          <h3>O Último Guardião</h3><p>Ação</p>
+          <a href="https://www.justwatch.com/br" target="_blank" rel="noopener">Onde assistir</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="categoria" id="comedia">
+      <h2>Comédia</h2>
+      <div class="filmes">
+        <article class="filme" data-titulo="meu vizinho maluco" data-categoria="comedia">
+          <div class="capa capa3">MEU VIZINHO<br>MALUCO</div>
+          <h3>Meu Vizinho Maluco</h3><p>Comédia</p>
+          <a href="https://www.justwatch.com/br" target="_blank" rel="noopener">Onde assistir</a>
+        </article>
+        <article class="filme" data-titulo="um plano perfeito" data-categoria="comedia">
+          <div class="capa capa6">UM PLANO<br>PERFEITO</div>
+          <h3>Um Plano Perfeito</h3><p>Comédia</p>
+          <a href="https://www.justwatch.com/br" target="_blank" rel="noopener">Onde assistir</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="categoria" id="terror">
+      <h2>Terror</h2>
+      <div class="filmes">
+        <article class="filme" data-titulo="sombras da noite" data-categoria="terror">
+          <div class="capa capa4">SOMBRAS<br>DA NOITE</div>
+          <h3>Sombras da Noite</h3><p>Suspense e terror</p>
+          <a href="https://www.justwatch.com/br" target="_blank" rel="noopener">Onde assistir</a>
+        </article>
+        <article class="filme" data-titulo="o corredor escuro" data-categoria="terror">
+          <div class="capa capa5">O CORREDOR<br>ESCURO</div>
+          <h3>O Corredor Escuro</h3><p>Terror</p>
+          <a href="https://www.justwatch.com/br" target="_blank" rel="noopener">Onde assistir</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="categoria" id="ficcao">
+      <h2>Ficção científica</h2>
+      <div class="filmes">
+        <article class="filme" data-titulo="planeta distante" data-categoria="ficcao">
+          <div class="capa capa1">PLANETA<br>DISTANTE</div>
+          <h3>Planeta Distante</h3><p>Ficção científica</p>
+          <a href="https://www.justwatch.com/br" target="_blank" rel="noopener">Onde assistir</a>
+        </article>
+        <article class="filme" data-titulo="o futuro perdido" data-categoria="ficcao">
+          <div class="capa capa6">O FUTURO<br>PERDIDO</div>
+          <h3>O Futuro Perdido</h3><p>Ficção científica</p>
+          <a href="https://www.justwatch.com/br" target="_blank" rel="noopener">Onde assistir</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>🎬 Filmes Online Grátis — catálogo para descobrir filmes.</footer>
+
+  <script>
+    const pesquisa = document.getElementById("pesquisa");
+    const filmes = document.querySelectorAll(".filme");
+    const resultado = document.getElementById("resultado");
+
+    pesquisa.addEventListener("input", () => {
+      const termo = pesquisa.value
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase()
+        .trim();
+
+      let encontrados = 0;
+
+      filmes.forEach(filme => {
+        const titulo = filme.dataset.titulo;
+        const nome = titulo.normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "").toLowerCase();
+
+        const mostrar = nome.includes(termo);
+        filme.hidden = !mostrar;
+        if (mostrar) encontrados++;
+      });
+
+      document.querySelectorAll(".categoria").forEach(secao => {
+        const visiveis = [...secao.querySelectorAll(".filme")]
+          .some(filme => !filme.hidden);
+        secao.hidden = termo !== "" && !visiveis;
+      });
+
+      resultado.textContent = termo && encontrados === 0
+        ? "Nenhum título encontrado. Tente outra pesquisa."
+        : termo ? encontrados + " título(s) encontrado(s)." : "";
+    });
+  </script>
+</body>
+</html>
